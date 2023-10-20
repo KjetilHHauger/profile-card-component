@@ -1,13 +1,111 @@
-* {
-    box-sizing: border-box;
+:root {
+    --primary: #19A1AE;
+    --secondary: #2E3349;
+    --tertiary: #6B7082;
 }
 
-h1 {
-    background-color: black;
-    color: yellow;
+body {
+    background-color: var(--primary);
+    font-family: 'Kumbh Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-h2 {
-    background-color: goldenrod;
-    color: black;
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 326px;
+    height: 374px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 50px 100px -20px rgb(8 70 94 / 50%);
+    z-index: 10;
+    position: absolute;
+}
+
+.header {
+    height: 140px;
+    background-image: url(../assets/images/bg-pattern-card.svg);
+    /* background-repeat: no-repeat; */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.userImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.userImage img {
+    height: 96px;
+    width: 96px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    position: absolute;
+}
+
+.name {
+    display: flex;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--secondary);
+    margin-top: 72px;
+    justify-content: center;
+}
+
+.age {
+    display: flex;
+    font-size: 18px;
+    font-weight: normal;
+    color: var(--tertiary);
+    margin-left: 9.5px;
+}
+
+.location {
+    display: flex;
+    font-size: 13px;
+    font-weight: normal;
+    color: var(--tertiary);
+    justify-content: center;
+    margin-top: 8px;
+    margin-bottom: 25px;
+}
+
+.footer {
+    display: flex;
+    height: 88px;
+    border-top: 2px solid #97979720;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.footerTitle {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+.footerContent {
+    font-size: 10px;
+    font-weight: normal;
+    letter-spacing: 1.5px;
+    color: var(--tertiary);
+}
+
+.topCircle {
+    position: relative;
+    top: -386px;
+    left: 0;
+}
+
+.bottomCircle {
+    position: relative;
+    bottom: -466px;
+    right: 84px;
 }
